@@ -1,0 +1,40 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbutton {
+    background-color: coral;
+    padding: 11px 25px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.navbutton-dropdown {
+    background-color: rgb(130, 80, 255);
+    padding: 11px 25px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-box {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    padding-top: 20px;
+    margin-left: -26px;
+
+}
+
+.navbutton:hover .dropdown-box {
+    display: block;
+}
+
+.dropdown-box .navbutton-dropdown:hover {
+    background-color: rgb(175, 69, 135);
+    transition: 1s;
+}
